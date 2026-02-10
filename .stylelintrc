@@ -1,0 +1,30 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-clean-order", "stylelint-config-prettier-scss"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      "rules",
+      "at-rules"
+    ],
+    "no-empty-source": null,
+    "declaration-empty-line-before": "never",
+    "selector-class-pattern": null,
+    "keyframes-name-pattern": null,
+    "no-descending-specificity": null,
+    "function-url-quotes": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "number-max-precision": null,
+    "value-no-vendor-prefix": null
+  }
+}
