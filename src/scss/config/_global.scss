@@ -26,10 +26,10 @@ body {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
-  letter-spacing: 1px;
   color: var(--light-color);
-  background-color: var(--dark-color);
   text-rendering: optimizespeed;
+  letter-spacing: 1px;
+  background-color: var(--dark-color);
 }
 
 li,

@@ -1,17 +1,17 @@
 .main-screen {
   position: relative;
-  height: 100vh;
   display: flex;
-  align-items: flex-end;
   gap: 48px;
+  align-items: flex-end;
+  height: 100vh;
   padding-bottom: 80px;
 
   &__name-wrap {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-grow: 1;
     gap: 16px;
+    align-items: flex-start;
   }
 
   &__name-icon {
@@ -24,33 +24,33 @@
   }
 
   &__name {
-    font-size: 124px;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    font-size: 124px;
+    text-transform: uppercase;
   }
 
   &__sign {
-    font-size: 48px;
     display: flex;
     flex-direction: column;
+    font-size: 48px;
   }
 
   &__icon {
     position: absolute;
-    left: 50%;
     bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
     display: block;
     width: 16px;
     height: 16px;
-    transform: translateX(-50%) rotate(-45deg);
 
     &::before,
     &::after {
       content: '';
       position: absolute;
       left: 0;
-      background-color: currentColor;
+      background-color: currentcolor;
     }
 
     &::before {

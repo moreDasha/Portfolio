@@ -3,11 +3,11 @@
 .header {
   position: fixed;
   z-index: 1;
-  inset: 0 0 auto 0;
-  padding: 16px;
+  inset: 0 0 auto;
   display: flex;
   gap: 48px;
   justify-content: space-between;
+  padding: 16px;
   background-color: var(--dark-color);
 
   @include hover {
@@ -42,23 +42,23 @@
 
   &__item {
     display: flex;
-    align-items: center;
     gap: 18px;
+    align-items: center;
 
     &::before {
       content: '';
-      border-radius: 50%;
       display: block;
       width: 18px;
       height: 18px;
-      background-color: currentColor;
+      border-radius: 50%;
+      background-color: currentcolor;
     }
   }
 
   &__link-wrap {
-    font-size: 18px;
-    min-width: 150px;
     overflow: hidden;
+    min-width: 150px;
+    font-size: 18px;
   }
 
   &__link {
@@ -70,8 +70,8 @@
       color 0.2s ease-in-out;
 
     @include hover {
-      background-color: var(--light-color);
       color: var(--dark-color);
+      background-color: var(--light-color);
     }
   }
 }
