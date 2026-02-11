@@ -1,0 +1,14 @@
+// Config
+@use 'config/global';
+@use 'config/vars';
+@use 'config/fonts';
+
+// Components
+@use 'components/header';
+@use 'components/main-screen';
+
+// Utils
+// Важно подключать в самом конце
+@use 'utils/breakpoint-condition';
+@use 'utils/disable-scroll';
+@use 'utils/hidden';

@@ -1,0 +1,77 @@
+@use '../config/mixins' as *;
+
+.header {
+  position: fixed;
+  z-index: 1;
+  inset: 0 0 auto 0;
+  padding: 16px;
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+
+  @include hover {
+    .header__link {
+      transform: translateX(0);
+    }
+  }
+
+  &__left-part,
+  &__right-part {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__left-part {
+    .header__link {
+      transform: translateX(-200%);
+    }
+  }
+
+  &__right-part {
+    text-align: right;
+
+    .header__item::before {
+      order: 1;
+    }
+
+    .header__link {
+      transform: translateX(200%);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    &::before {
+      content: '';
+      border-radius: 50%;
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: currentColor;
+    }
+  }
+
+  &__link-wrap {
+    font-size: 18px;
+    min-width: 150px;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: inline-block;
+    text-transform: uppercase;
+    transition:
+      transform 0.4s ease-out,
+      background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out;
+
+    @include hover {
+      background-color: var(--light-color);
+      color: var(--dark-color);
+    }
+  }
+}
