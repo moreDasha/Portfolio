@@ -48,10 +48,12 @@
     &::before {
       content: '';
       display: block;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background-color: currentcolor;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/icons/dot-light.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
     }
   }
 

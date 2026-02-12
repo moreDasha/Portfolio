@@ -1,0 +1,11 @@
+.canvas-cursor {
+  pointer-events: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  mix-blend-mode: difference;
+}
