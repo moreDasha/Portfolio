@@ -1,0 +1,29 @@
+.timer-experience {
+  display: flex;
+  gap: 48px;
+  align-items: baseline;
+
+  &__date {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    font-size: 80px;
+
+    &::after {
+      content: attr(data-descr);
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &__time {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

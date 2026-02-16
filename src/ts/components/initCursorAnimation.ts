@@ -42,7 +42,7 @@ export const initCursorAnimation = () => {
       }
     });
 
-    ctx.strokeStyle = 'white';
+    ctx.strokeStyle = '#fff4e7';
     ctx.lineWidth = 2;
     ctx.stroke();
 

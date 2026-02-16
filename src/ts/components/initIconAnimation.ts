@@ -1,10 +1,11 @@
 export const initIconAnimation = () => {
-  if (!document.querySelector('.js-icon')) return;
+  const icon = document.querySelector('.js-icon');
+
+  if (!icon) return;
 
   const frequency = [-0.02, 0.01, -0.01, 0.02];
   const scale = [1, -1, 1.5, -1.5];
 
-  const icon = document.querySelector('.js-icon');
   const filterFrequency = icon?.querySelector('[baseFrequency]');
   const filterScale = icon?.querySelector('[scale]');
   const delay = 120;

@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+  padding: 180px var(--offset-container);
+  color: var(--dark-color);
+  background-color: var(--light-color);
+
+  &__title {
+    font-size: 124px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    --about-dot-size: 20px;
+    --about-dot-offset: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__item-title {
+    display: flex;
+    gap: var(--about-dot-offset);
+    align-items: center;
+    font-size: 56px;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: block;
+      width: var(--about-dot-size);
+      height: var(--about-dot-size);
+      background-image: url('../img/icons/dot.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+  }
+
+  &__item-body {
+    padding-left: calc(var(--about-dot-size) + var(--about-dot-offset));
+  }
+}
