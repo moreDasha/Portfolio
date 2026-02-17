@@ -40,13 +40,13 @@ export const initTimerExperience = () => {
   const inputDay = document.querySelector('.js-timer-day');
   const inputTime = document.querySelector('.js-timer-time');
 
-  const dateStart = new Date('2023-06-01T00:00:00');
+  const dateStart = new Date('2023-04-01T00:00:00');
 
   const updateExperience = () => {
     const dateCurrent = new Date();
     let years = Number(dateCurrent.getFullYear()) - Number(dateStart.getFullYear());
     let months = Number(dateCurrent.getMonth()) - Number(dateStart.getMonth());
-    let days = Number(dateCurrent.getDay()) - Number(dateStart.getDay());
+    let days = Number(dateCurrent.getDate()) - Number(dateStart.getDate());
     let hours = Number(dateCurrent.getHours()) - Number(dateStart.getHours());
     let minutes = Number(dateCurrent.getMinutes()) - Number(dateStart.getMinutes());
     let seconds = Number(dateCurrent.getSeconds()) - Number(dateStart.getSeconds());
@@ -68,7 +68,7 @@ export const initTimerExperience = () => {
 
     if (days < 0) {
       months--;
-      const prevMonthDays = new Date(dateCurrent.getFullYear(), dateCurrent.getMonth(), 0).getDay();
+      const prevMonthDays = new Date(dateCurrent.getFullYear(), dateCurrent.getMonth(), 0).getDate();
       days += prevMonthDays;
     }
 

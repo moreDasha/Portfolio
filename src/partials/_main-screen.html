@@ -1,0 +1,32 @@
+<section class="main-screen">
+  <div class="main-screen__name-wrap">
+    <div class="main-screen__name-icon">
+      <svg class="js-icon">
+        <defs>
+          <filter id="icon-filter">
+            <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="2" seed="1" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" />
+          </filter>
+        </defs>
+        <image
+          x="0"
+          y="0"
+          width="160"
+          height="160"
+          href="img/icons/flower-light.svg"
+          filter="url(#icon-filter)"
+          alt="flower"
+        />
+      </svg>
+    </div>
+    <h1 class="main-screen__name">
+      <span class="main-screen__name-item">дарья</span>
+      <span class="main-screen__name-item">карпеева</span>
+    </h1>
+  </div>
+  <p class="main-screen__sign">
+    <span>верстальщик /</span>
+    <span>frontend&nbsp;developer</span>
+  </p>
+  <span class="main-screen__icon"></span>
+</section>

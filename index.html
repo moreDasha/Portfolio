@@ -8,90 +8,10 @@
   </head>
   <body>
     <div class="site-container">
-      <header class="header">
-        <div class="header__left-part">
-          <div class="header__item">
-            <div class="header__link-wrap"><a href="#" class="header__link">о себе</a></div>
-          </div>
-          <div class="header__item">
-            <div class="header__link-wrap"><a href="#" class="header__link">примеры работ</a></div>
-          </div>
-        </div>
-        <div class="header__right-part">
-          <div class="header__item">
-            <div class="header__link-wrap"><a href="#" class="header__link">контакты</a></div>
-          </div>
-        </div>
-      </header>
+      <include src="src/partials/_header.html"></include>
       <main>
-        <section class="main-screen">
-          <div class="main-screen__name-wrap">
-            <div class="main-screen__name-icon">
-              <svg class="js-icon">
-                <defs>
-                  <filter id="icon-filter">
-                    <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="2" seed="1" result="noise" />
-                    <feDisplacementMap
-                      in="SourceGraphic"
-                      in2="noise"
-                      scale="5"
-                      xChannelSelector="R"
-                      yChannelSelector="G"
-                    />
-                  </filter>
-                </defs>
-                <image
-                  x="0"
-                  y="0"
-                  width="160"
-                  height="160"
-                  href="img/icons/flower-light.svg"
-                  filter="url(#icon-filter)"
-                  alt="flower"
-                />
-              </svg>
-            </div>
-            <h1 class="main-screen__name">
-              <span class="main-screen__name-item">дарья</span>
-              <span class="main-screen__name-item">карпеева</span>
-            </h1>
-          </div>
-          <p class="main-screen__sign">
-            <span>верстальщик /</span>
-            <span>frontend&nbsp;developer</span>
-          </p>
-          <span class="main-screen__icon"></span>
-        </section>
-        <section class="about">
-          <h2 class="about__title">о себе</h2>
-          <div class="about__item">
-            <h3 class="about__item-title">Опыт коммерческой разработки</h3>
-            <div class="about__item-body">
-              <div class="timer-experience js-timer-experience">
-                <div class="timer-experience__date">
-                  <div class="timer-experience__item js-timer-year"></div>
-                  <div class="timer-experience__item js-timer-month"></div>
-                  <div class="timer-experience__item js-timer-day"></div>
-                </div>
-                <p class="timer-experience__time js-timer-time"></p>
-              </div>
-            </div>
-          </div>
-          <div class="about__item">
-            <h3 class="about__item-title">Основной стек технологий</h3>
-            <div class="about__item-body">
-              <p>HTML, CSS, JS</p>
-            </div>
-          </div>
-          <div class="about__item">
-            <h3 class="about__item-title">Основные задачи</h3>
-            <div class="about__item-body"></div>
-          </div>
-          <div class="about__item">
-            <h3 class="about__item-title">Дополнительная информация</h3>
-            <div class="about__item-body"></div>
-          </div>
-        </section>
+        <include src="src/partials/_main-screen.html"></include>
+        <include src="src/partials/_about.html"></include>
       </main>
       <footer></footer>
       <canvas class="canvas-cursor js-canvas-cursor"></canvas>

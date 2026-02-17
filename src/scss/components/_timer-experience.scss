@@ -13,12 +13,11 @@
     display: flex;
     gap: 8px;
     align-items: baseline;
-    font-size: 80px;
+    font-weight: 600;
 
     &::after {
       content: attr(data-descr);
       font-size: 24px;
-      font-weight: 600;
     }
   }
 

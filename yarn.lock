@@ -1158,6 +1158,11 @@ globjoin@^0.1.4:
   resolved "https://registry.yarnpkg.com/globjoin/-/globjoin-0.1.4.tgz#2f4494ac8919e3767c5cbb691e9f463324285d43"
   integrity sha512-xYfnw62CKG8nLkZBfWbhWwDw02CHty86jfPcc2cr3ZfeuK9ysoVPPEUxf21bAD/rWAgk52SuBrLJlefNy8mvFg==
 
+gsap@^3.14.2:
+  version "3.14.2"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.14.2.tgz#6a9ea31e5046948e0be61eae006ae576ca5937d6"
+  integrity sha512-P8/mMxVLU7o4+55+1TCnQrPmgjPKnwkzkXOK1asnR9Jg2lna4tEY5qBJjMmAaOBDDZWtlRjBXjLa0w53G/uBLA==
+
 has-flag@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-5.0.1.tgz#5483db2ae02a472d1d0691462fc587d1843cd940"
@@ -1911,6 +1916,18 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vite-include-html-plugin@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vite-include-html-plugin/-/vite-include-html-plugin-0.0.2.tgz#3beef891ea5cb888195165619995b2fc3d60bd34"
+  integrity sha512-hLteMtA48EaT9Ta3BXCYFYEUlrCjroTBz7dP3MKScHsXaNc0SDMWk7ThOfx7ggh0AXDdSd+/fqYnaXQ7EeBbNQ==
+
+vite-plugin-include-html@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-include-html/-/vite-plugin-include-html-1.0.0.tgz#f78a9602dadbcdcca3ad70a3247f1bd193fb2a81"
+  integrity sha512-lOa/iFpM0C2sBpUXOH5/CUQwkg5LiaqyBcDTQm8Wmw9ZjPd3f53libCbXBCjfTr749CocL153rd36mXdQRO/jA==
+  dependencies:
+    vite-include-html-plugin "^0.0.2"
 
 vite@^7.3.1:
   version "7.3.1"
