@@ -1,0 +1,17 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  padding: 160px var(--offset-container);
+
+  &__title {
+    font-size: 96px;
+    text-transform: uppercase;
+  }
+
+  &__items-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1px, 1fr));
+    gap: 36px;
+  }
+}
