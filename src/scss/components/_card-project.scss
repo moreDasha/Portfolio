@@ -1,8 +1,46 @@
+@use '../config/mixins' as *;
+
 .card-project {
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    opacity: 0;
+
+    @include hover {
+      ~ .card-project__video {
+        border-radius: 20px;
+      }
+
+      ~ .card-project__title .card-project__title-inner {
+        transform: translateY(-50%);
+      }
+    }
+  }
+
   &__video {
     overflow: hidden;
     aspect-ratio: 1500 / 910;
     width: 100%;
-    border-radius: 20px;
+    margin-bottom: 24px;
+    border-radius: 80px;
+    opacity: 0.9;
+    transition: border-radius 0.4s ease-in-out;
+  }
+
+  &__title {
+    overflow: hidden;
+    max-height: 66px;
+    font-size: 56px;
+    text-transform: uppercase;
+  }
+
+  &__title-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform 0.3s ease-in;
   }
 }
